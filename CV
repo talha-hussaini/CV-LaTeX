@@ -1,0 +1,218 @@
+%-------------------------
+% Resume in Latex
+% Author : Syed Talha Hussaini
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Syed Talha Hussaini } \\ \vspace{1pt}
+    \small +91-9538028356 $|$ \href{mailto:sf15664n@pace.edu}{\underline{sf15664n@pace.edu}} $|$ 
+    \href{https://www.linkedin.com/in/syedtalhahussaini/}{\underline{LinkedIn}} $|$
+  %  \href{https://github.com/talha-hussaini}{\underline{github.com/talha-hussaini}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Pace University, Seidenberg School of CS and Information Systems}{New York, NY}
+      {Master of Science in Information Systems}{Aug. 2023 -- May 2025}
+    \resumeSubheading
+      {Visvesvaraya Technological University}{Karnataka, India}
+      {Bachelors of Engineering in Mechanical}{Aug. 2015 -- May 2019}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Site Reliability Engineer (SRE)}{Jan 2023 -- Present}
+      {Zeta}{Hyderabad, India}
+      \resumeItemListStart
+        \resumeItem{Manage applications across several globally distributed zones}
+        \resumeItem{In charge of all deployments in both production and non-production environments}
+        \resumeItem{Manage and respond to system incidents and outages, troubleshoot issues, and coordinate with teams to resolve incidents and minimize impact}
+        \resumeItem
+        {Monitor the performance of systems and applications, identify and resolve technical issues, and ensure that systems are available, reliable, and performing at optimal levels}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {Product Solution Engineer}{Nov 2021 -- Jan 2023}
+      {Zeta}{Hyderabad, India}
+      \resumeItemListStart
+        \resumeItem{Provides 24*7 support for all technical
+queries related to I/O}
+        \resumeItem{Analyse problems, diagnose issues, and fix bugs when required}
+        \resumeItem{Front line support for Monitoring – Infrastructure and Application}
+        \resumeItem{Communicate and troubleshoot operational issues supporting a complex environment}
+        \resumeItem{Respond, troubleshoot, and resolve production alerts and Analyze trends to prevent incidents pro-actively}
+      \resumeItemListEnd
+
+
+    
+
+    \resumeSubheading
+      {Junior Software Engineer}{May 2020 -- Aug 2021}
+      {Qubeta Info Solutions}{Banglore, India}
+      \resumeItemListStart
+        \resumeItem{Exposure to Python Html and Css and NiFi}}
+        
+        \resumeItem{Managed Kubernetes resources, created Jenkins jobs and NiFi templates, and set up virtual machines (Ec2)}
+        \resumeItem{Continuously monitor and evaluate systems, processes, and procedures, identify areas for improvement, and implement changes to enhance the overall system reliability and performance}
+        \resumeItem{Serve as a technical liaison between the customer and the development team, helping to ensure that customer requirements are accurately translated into product features.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{AWS CI/CD} $|$ \emph{RDS, S3, Elastic Beanstalk, Code Commit, Code Build}}{Jan 2023 -- Feb 2023}
+          \resumeItemListStart
+            \resumeItem{Implemented AWS-based CI/CD pipeline using Code Commit, Code Build, S3, Elastic 
+Beanstalk, and RDS}
+            \resumeItem{Enabled developers to commit code changes to Code Commit and trigger Code Build process }
+            \resumeItem{Stored resulting artifact in S3 bucket for retrieval and deployment to Elastic Beanstalk using 
+AWS Deploy}
+            \resumeItem{Managed entire pipeline with AWS Pipeline, creating a seamless and automated deployment}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Company Database} $|$ \emph{Git, MySql}}{June 2022 -- Aug 2022}
+          \resumeItemListStart
+            \resumeItem{Have created multiple tables to perform various operations.
+The tables consist of primary, foreign, and composite keys, and there is an interconnection b/w tables using Reference. }
+        \resumeItem
+            {The operation I have performed is CRUD which is Create, Retrieve, update, delete, and many others like joins, indexes, clusters, and triggers to make a complete database}
+          \resumeItemListEnd
+      
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Core Python, SQL, HTML and CSS} \\
+     \textbf{Cloud Computing}{: EC2, IAM, ELB, ASG, S3, VPC, Cloudwatch, RDS, Elastic Beanstalk and more} \\
+     \textbf{DevOps tools}{: Git, Linux, Docker, Kubernetes, Jenkins, Elasticsearch, Kibana,  Prometheus, and Grafana } \\
+     \textbf{Certifications}{: (Amazon Web Services) AWS cloud practitioner (CLF-CO1), Microsoft Azure Fundamentals (AZ-900) and Project Management by Google}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
